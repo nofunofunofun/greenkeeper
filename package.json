@@ -29,7 +29,8 @@
     "rollbar": "^2.0.3",
     "semver": "^5.3.0",
     "stripe": "^4.15.1",
-    "yml-in-place": "^1.0.2"
+    "yml-in-place": "^1.0.2",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "nock": "^9.0.0",
@@ -63,11 +64,14 @@
     "deploy": "./deploy",
     "pretest": "standard && npm run db:start",
     "start": "node index.js",
-    "test": "NODE_ENV=testing nyc tap test"
+    "test": "NODE_ENV=testing nyc tap test",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "standard": {
     "ignore": [
       "couchdb"
     ]
-  }
+  },
+  "snyk": true
 }
