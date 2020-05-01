@@ -1,0 +1,26 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.14.1
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  SNYK-JS-LODASH-567746:
+    - lodash:
+        patched: '2020-05-01T06:15:57.293Z'
+    - yml-in-place > lodash:
+        patched: '2020-05-01T06:15:57.293Z'
+    - couchdb-bootstrap > nano-option > lodash:
+        patched: '2020-05-01T06:15:57.293Z'
+    - couchdb-bootstrap > couchdb-push > lodash:
+        patched: '2020-05-01T06:15:57.293Z'
+    - request-promise > request-promise-core > lodash:
+        patched: '2020-05-01T06:15:57.293Z'
+    - couchdb-bootstrap > couchdb-configure > nano-option > lodash:
+        patched: '2020-05-01T06:15:57.293Z'
+    - couchdb-bootstrap > couchdb-push > nano-option > lodash:
+        patched: '2020-05-01T06:15:57.293Z'
+    - couchdb-bootstrap > couchdb-secure > nano-option > lodash:
+        patched: '2020-05-01T06:15:57.293Z'
+    - couchdb-bootstrap > couchdb-push > couchdb-ensure > nano-option > lodash:
+        patched: '2020-05-01T06:15:57.293Z'
+    - couchdb-bootstrap > couchdb-secure > couchdb-ensure > nano-option > lodash:
+        patched: '2020-05-01T06:15:57.293Z'
